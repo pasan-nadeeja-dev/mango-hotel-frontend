@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.authCardWrapper {
+    width: 500px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(226, 226, 226);
+}
+
+.submitBtnWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
