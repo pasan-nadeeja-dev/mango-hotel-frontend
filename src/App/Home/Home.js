@@ -71,9 +71,9 @@ const Home = () => {
       </div>
       <div className={classNames.bodyWrapper}>
         <Spin spinning={loading}>
-          <div className={classNames.cardWrapper}>
-            {rooms.length > 0 ? (
-              rooms.map((value, index) => (
+          {rooms.length > 0 ? (
+            rooms.map((value, index) => (
+              <div className={classNames.cardWrapper}>
                 <div className={classNames.card} key={index}>
                   <h2>Hotel : {value.name}</h2>
                   <h3>View : {value.view}</h3>
@@ -90,11 +90,11 @@ const Home = () => {
                     {value.availability ? "Reserve" : "Booked"}
                   </Button>
                 </div>
-              ))
-            ) : (
-              <h3>No rooms available</h3>
-            )}
-          </div>
+              </div>
+            ))
+          ) : (
+            <h3>No rooms available</h3>
+          )}
         </Spin>
       </div>
     </Layout>
