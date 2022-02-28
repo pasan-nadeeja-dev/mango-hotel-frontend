@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form, Input, message } from "antd";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import API from "../Api";
 import { validation } from "../validation";
 import classNames from "./Auth.module.scss";
@@ -93,6 +93,7 @@ const Signup = () => {
             loading={loading}
           />
         </Form>
+        <p>Already have an account? <Link to="/signin">Signin</Link></p>
       </div>
     </div>
   );
